@@ -19,7 +19,7 @@ export default function App() {
   const [tag, setTag] = useState('');
 
   useEffect(() => {
-    if(!page) return;
+    if (!page) return;
 
     setLoader(true);
 
@@ -46,9 +46,8 @@ export default function App() {
     });
   }, [name, page]);
 
-
   const getName = nameSearch => {
-    if(nameSearch === name) return;
+    if (nameSearch === name) return;
     setName(nameSearch);
     setPage(1);
   };
